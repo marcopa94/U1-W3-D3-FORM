@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      h1 {
+        color: RED;
+      }
+      body {
+        text-align: center;
+      }
+      section {
+        border-color: black;
+        border: 3px;
+        display: block;
+        text-align: center;
+        background-color: rgb(245, 245, 201);
+        width: max-content;
+        margin-inline: auto;
+        border-radius: 8px;
+      }
+      label {
+        display: block;
+        font-weight: 700;
+      }
+      button {
+        background-color: blueviolet;
+        border-radius: 9px;
+      }
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form & Events</title>
-
-    <link rel="stylesheet" href="./assets/css/form.css" />
-    <link rel="stylesheet" href="./assets/css/cards.css" />
+    <title>to do list</title>
   </head>
-
   <body>
-    <h1>lista della spesa</h1>
-    <form>
-      <div class="form-group">
-        <label for="title">Titolo</label>
-        <input type="text" id="title" placeholder="Inserisci un titolo" required />
-      </div>
+    <h1>Prodotti da comprare</h1>
+    <section>
+      <label>Inserisci qui i tuoi prodotti</label>
+      <input id="inputbtn" type="text" />
+      <button id="btn">invia</button>
 
-      <button type="submit">Invia</button>
-      <button type="button" onclick="confirmAndReset(event)">resetta i campi</button>
-    </form>
-
-    <div id="cards-container"></div>
-
+      <button id="clearbtn">cancella</button>
+      <ul id="elenco"></ul>
+    </section>
+    <div id="pippo"></div>
     <script src="./js/index.js"></script>
   </body>
 </html>
