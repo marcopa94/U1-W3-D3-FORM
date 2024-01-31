@@ -2,6 +2,18 @@
 <html lang="en">
   <head>
     <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      header {
+        background-color: beige;
+      }
       h1 {
         color: RED;
       }
@@ -32,10 +44,12 @@
     <title>to do list</title>
   </head>
   <body>
-    <h1>Prodotti da comprare</h1>
+    <header>
+      <h1>Prodotti da comprare</h1>
+    </header>
     <section>
       <label>Inserisci qui i tuoi prodotti</label>
-      <input id="inputbtn" type="text" />
+      <input id="inputbtn" type="text" placeholder="inserisci i prodotti qui" />
       <button id="btn">invia</button>
 
       <button id="clearbtn">cancella</button>

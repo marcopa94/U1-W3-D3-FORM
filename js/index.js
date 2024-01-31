@@ -8,10 +8,10 @@ newbtn.onclick = function () {
     li.innerText = inputbtn.value;
     console.log(li);
     lista.appendChild(li);
-  }
+    const pulisci = document.getElementById("clearbtn");
 
-  const pulisci = document.getElementById("clearbtn");
-  pulisci.onclick = function () {
-    pulisci.remove("li");
-  };
+    pulisci.onclick = function () {
+      lista.remove();
+    };
+  }
 };
