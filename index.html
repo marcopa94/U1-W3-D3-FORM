@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form & Events</title>
+
+    <link rel="stylesheet" href="./assets/css/form.css" />
+    <link rel="stylesheet" href="./assets/css/cards.css" />
+  </head>
+
+  <body>
+    <h1>lista della spesa</h1>
+    <form>
+      <div class="form-group">
+        <label for="title">Titolo</label>
+        <input type="text" id="title" placeholder="Inserisci un titolo" required />
+      </div>
+
+      <button type="submit">Invia</button>
+      <button type="button" onclick="confirmAndReset(event)">resetta i campi</button>
+    </form>
+
+    <div id="cards-container"></div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
